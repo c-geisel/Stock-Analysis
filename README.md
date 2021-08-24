@@ -5,11 +5,29 @@
 The purpose of the following project is to analyze stock data using VBA. We are conducting this research to help out a recent graduate, Steve, who has been tasked by his parents to see which stocks are the best to invest in based on two factors, their total volumes and percent return. Initially this analysis was created to comb through 12 stocks but now we are refactoring the code to loop through all data at once so that we are able to run through our data faster. This will allow the code to run more efficiently as well as allow for the possibility to run an analysis on hundreds or thousands of stocks if we so choose. 
 
 ## Results
-Insert a text file of the code, explain how it worked
+### Stock Performance Between 2017 and 2018
+  percent retun is the icrease of decrease in price, how much your investment grew or shrank.
+        2017 had higher yearly returns, more growth- 2018 has was more shrinkage.
 
+Both the original and refactored script led to the same results in regards to yearly volume and percent return. The first item that was tested for in the stocks for both years was the total volume. The total volume refers to how often stock is traded throughout the year. The more often a stock is traded, the more that you can see the price being accurate. When looking at the outcomes of total volumes for both years it can be seen that with the exception of a couple of stocks, the total volume tended to be much higher in 2018 which goes to show that the stock was being traded more. In order to find the total volume, I used the following line of code where we added the value of the cells in column 8 together if they had matching ticker indexes. 
 '''
 
-'1a) Create a ticker Index
+     '3a) Increase volume for current ticker
+     'We can get rid of the if statement that we had here earlier, for each volume of the ticker index type we add it together.
+     tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value
+     
+ '''
+ 
+Percent return...
+
+
+
+### Original Script vs. Refactored Script
+-compare execution times of the two different scripts using the images
+In the original script we were looping through each index separately and then testing for the next one, in our refactored script we are looping through all at once, This improves efficiency. 
+'''
+
+    '1a) Create a ticker Index
     'Ticker Index will be what we are using for volumes, starting, and ending prices in order to talk about which ticker we are on.
     'It will generalize it so that we could have more than 12 stocks if we wanted to, thousands if even.
     tickerIndex = 0
@@ -68,17 +86,9 @@ Insert a text file of the code, explain how it worked
     Next i
     
 '''
-
-### Stock Performance Between 2017 and 2018
--use images and examples from the code to explain differences in the two years
-  total volume refers to how often the stock is traded throughout the year- if its taded often the price will accurately reflect the price of the stock 
-        with the excepttion of a couple of stocks, the total volume was much higher in 2018
-  percent retun is the icrease of decrease in price, how much your investment grew or shrank.
-        2017 had higher yearly returns, more growth- 2018 has was more shrinkage.
-
-### Original Script vs. Refactored Script
--compare execution times of the two different scripts using the images
-In the original script we were looping through each index separately and then testing for the next one, in our refactored script we are looping through all at once, This improves efficiency. In old script for each year I was getting around 0.8 now I'm getting around 0.2
+Explain how this is different
+In old script for each year I was getting around 0.8 now I'm getting around 0.2
+Add in the run time images
 
 ## Summary
 ### What are the advantages or disadvantages of refactoring code?
