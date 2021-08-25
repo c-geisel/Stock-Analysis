@@ -37,6 +37,13 @@ In order to find the percent return I used the following code in the refactored 
 
 As seen above, I used two if statements in order to test for starting and ending prices. If the ticker in the row prior and the current ticker did not match, then the price column associated with the current ticker was recorded as the starting price. Similarly, if the current ticker did not match the ticker of the following row, then the price value associated with the current ticker was marked as the ending price. 
 
+In the original script, when I ran the 2017 macro it took 0.8359375 seconds, the refactored script allowed for this time to be cut down to 0.2070312 seconds. 
+
+![VBA_Challenge_2017.png](Resources/VBA_Challenge_2017.png)
+
+Similarly, when running the original script for 2018 the run time was 0.84375 seconds and the refactored script ran the 2018 script in 0.2070312 seconds. 
+
+![VBA_Challenge_2018.png](Resources/VBA_Challenge_2018.png)
 
 
 ### Original Script vs. Refactored Script
@@ -69,13 +76,4 @@ By making these changes, as well as others seen in the refactored script from th
 Refactoring code comes along with many advantages. A big advantage of refactoring code is that it can run much faster.  This refactored script also cleaned up our code so that it was more generalized and easier to understand with less statements. Refactoring code can come with its disadvantages as well. In completing this process, you are taking stable code and messing with something that is already working. This could introduce bugs and cause problems that the code didn't originally have. Because of this, it's important to save a copy of the original code. Also, refactoring code can take quite a bit of time and if you are working against a deadline this may cause you issues in meeting the due dates to work out new bugs that may present themselves. However, if time allows refactoring may be beneficial in the long run. 
 
 ### How do these pros and cons apply to refactoring the original VBA script?
-When refactoring our original VBA script, it helped to greatly increase the efficiency of our code. In the original script, when I ran the 2017 macro it took 0.8359375 seconds, the refactored script allowed for this time to be cut down to 0.2070312 seconds. 
-
-![VBA_Challenge_2017.png](Resources/VBA_Challenge_2017.png)
-
-Similarly, when running the original script for 2018 the run time was 0.84375 seconds and the refactored script ran the 2018 script in 0.2070312 seconds. 
-
-![VBA_Challenge_2018.png](Resources/VBA_Challenge_2018.png)
-
-
-This may not seem like much but, this is because we are only analyzing 12 stocks. With this increased efficiency we could more easily test for hundreds or even thousands of tickers at once at a much faster rate than in our original script. The original script ran well without errors and when refactoring the code, I ran across quite a few errors that were not initially present that I needed to debug. However, the final result was well worth it with a cleaner, faster running script.
+When refactoring our original VBA script, it helped to greatly increase the efficiency of our code. The script run times when from around 0.8 to 0.2 seconds. This may not seem like much but, this is because we are only analyzing 12 stocks. With this increased efficiency we could more easily test for hundreds or even thousands of tickers at once at a much faster rate than in our original script. The original script ran well without errors and when refactoring the code, I ran across quite a few errors that were not initially present that I needed to debug. However, the final result was well worth it with a cleaner, faster running script.
