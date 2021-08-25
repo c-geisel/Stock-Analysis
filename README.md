@@ -49,6 +49,7 @@ The original script and refactored script give the same end result in the long r
     Dim tickerEndingPrices(12) As Single
     
 '''
+
 By doing this we are able to refer to all tickers within the same loop. A few other changes must be made to account for this adjustment such as referencing the ticker indexes when using these arrays (i.e. instead of using tickerVolume, using tickerVolumes(tickerIndex). Also, within the end of our loop we must also create a statement to increase our ticker index.
 
 '''
