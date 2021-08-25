@@ -79,4 +79,3 @@ Similarly, when running the original script for 2018 the run time was 0.84375 se
 
 
 This may not seem like much but, this is because we are only analyzing 12 stocks. With this increased efficiency we could more easily test for hundreds or even thousands of tickers at once at a much faster rate than in our original script. The original script ran well without errors and when refactoring the code, I ran across quite a few errors that were not initially present that I needed to debug. However, the final result was well worth it with a cleaner, faster running script.
-![image](https://user-images.githubusercontent.com/87433834/130829803-f5d6dc99-3b86-44e3-8358-8a76d2bfddba.png)
