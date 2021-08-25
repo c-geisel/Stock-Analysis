@@ -62,8 +62,9 @@ By doing this we are able to refering all tickers within the same loop. A few ot
          tickerIndex = tickerIndex + 1
 '''
 By making these changes, as well as others seen in the refactored script in the xlsm file, we are able to run through all tickers in one loop which increases efficiency and decreases run time. In the original script, when I ran the 2017 macro it took 0.8359375 seconds, the refactored script allowed for this time to be cut down to 0.2070312 seconds. 
-
-Similaryly, when running the original script for 2018 the run time was 0.84375 seconds and the refactored script ran the 2018 script in 0.2070312 seconds. 
+![VBA_Challenge_2017.png](Resources/VBA_Challenge_2017.png)
+Similarly, when running the original script for 2018 the run time was 0.84375 seconds and the refactored script ran the 2018 script in 0.2070312 seconds. 
+![VBA_Challenge_2018.png](Resources/VBA_Challenge_2018.png)
 
 
 ## Summary
