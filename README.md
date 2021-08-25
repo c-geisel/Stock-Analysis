@@ -72,7 +72,9 @@ Similarly, when running the original script for 2018 the run time was 0.84375 se
 
 ## Summary
 ### What are the advantages or disadvantages of refactoring code?
--advantage- it runs faster, it can run for more stocks because it's more generalized, it makes it cleaner and more efficient 
--disadvantages, it can add in bugs that were not there before, you're taking a stable code and messing with it.
+Refactoring code comes along with many advantages, but along with this can be disadvantages. A big advantage of refactoring code is that it can run much faster. For us it went from 0.8 to 0.2 seconds which may not seem liek much but this is because we are only analyzing 12 stocks. With this increased efficiency we could more easily test for hundreds or even thousands of tickers at once at a much faster rate than in our original script. This refactored script also cleaned up our code so that it was more generalized and easier to understand with less statements.
+
+Refactoring code can come with its disavantages though. In completing this process, you are taking stable code and messing with something that is already working. This could introduce bugs and cause problems that the code didn;t originally have. Because of this, it's important to save a copy of the original code. Also, refactoring code can take quite a bit of time and if you are working against a deadline this may cause you issues in meeting the due dates to work out the new bugs that may present themselves. However, if time allows refactoring may be beneficial in the long run. 
+
 ### How do these pros and cons apply to refactoring the original VBA script?
 - refactoring it made it run quite a bit faster which means we could analyze thousands of things if we wanted to. It made it more efficient and the tickerIndex generalized many items. However it took quite a bit of time to refactor. In a company this may take time that that is not there to refactor working code. Also it was important to save a copy of the old code because since we were messing with it we didn't want to introduce bugs or problems that made it then unsuable.
