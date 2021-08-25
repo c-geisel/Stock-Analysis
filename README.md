@@ -37,15 +37,6 @@ In order to find the percent return I used the following code in the refactored 
 
 As seen above, I used two if statements in order to test for starting and ending prices. If the ticker in the row prior and the current ticker did not match, then the price column associated with the current ticker was recorded as the starting price. Similarly, if the current ticker did not match the ticker of the following row, then the price value associated with the current ticker was marked as the ending price. 
 
-In the original script, when I ran the 2017 macro it took 0.8359375 seconds, the refactored script allowed for this time to be cut down to 0.2070312 seconds. 
-
-![VBA_Challenge_2017.png](Resources/VBA_Challenge_2017.png)
-
-Similarly, when running the original script for 2018 the run time was 0.84375 seconds and the refactored script ran the 2018 script in 0.2070312 seconds. 
-
-![VBA_Challenge_2018.png](Resources/VBA_Challenge_2018.png)
-
-
 ### Original Script vs. Refactored Script
 The original script and refactored script give the same end result in the long run in terms of the data found. However, the refactored script made a few changes in order to improve the code efficiency. In the original script, I created a for loop to record the total volume, starting, and ending prices for one ticker at a time. When all calculations had been completed the ticker would increase by one and the loop would repeat until all tickers were used. This gave us the correct answers but there is a more efficient way to structure our code. In the refactored code we are checking for all tickers volume, starting, and ending prices within the same loop. The way this is completed is by creating three output arrays for these values: 
 
@@ -68,8 +59,13 @@ By doing this we are able to refer to all tickers within the same loop. A few ot
 
 '''
 
-By making these changes, as well as others seen in the refactored script from the .xlsm file, we are able to run through all tickers in one loop. This increases efficiency and decreases run time. 
+By making these changes, as well as others seen in the refactored script from the .xlsm file, we are able to run through all tickers in one loop. This increases efficiency and decreases run time. In the original script, when I ran the 2017 macro it took 0.8359375 seconds, the refactored script allowed for this time to be cut down to 0.2070312 seconds. 
 
+![VBA_Challenge_2017.png](Resources/VBA_Challenge_2017.png)
+
+Similarly, when running the original script for 2018 the run time was 0.84375 seconds and the refactored script ran the 2018 script in 0.2070312 seconds. 
+
+![VBA_Challenge_2018.png](Resources/VBA_Challenge_2018.png)
 
 ## Summary
 ### What are the advantages or disadvantages of refactoring code?
