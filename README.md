@@ -1,5 +1,7 @@
 # Stock Analysis
 
+[Link to Stock Analysis Code](https://github.com/user/repo/blob/branch/other_file.md)
+
 ## Overview of Project
 ### Purpose 
 The purpose of the following project is to analyze stock data using VBA. We are conducting this research to help out a recent graduate, Steve, who has been tasked by his parents to see which stocks are best to invest in based on two factors: their total volumes and percent return. Initially this analysis was created to comb through 12 stocks but now we are refactoring the code to loop through all data at once so that we are able to run through our data faster. This will allow the code to run more efficiently as well as allow for the possibility to run an analysis on hundreds or thousands of stocks if we so choose. 
