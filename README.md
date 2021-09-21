@@ -1,6 +1,6 @@
 # Stock Analysis
 
-[Link to Stock Analysis Code](https://github.com/user/repo/blob/branch/other_file.md)
+[Link to Stock Analysis Code](https://github.com/c-geisel/stock-analysis/blob/main/VBA_Challenge.xlsm)
 
 ## Overview of Project
 ### Purpose 
